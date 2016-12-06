@@ -7,6 +7,7 @@ const dirVars = require('./dir_vars')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const pageArr = require('./page_entries.config');
 
 const configPlugins = [
   /*提取公共代码*/
@@ -36,12 +37,18 @@ const configPlugins = [
   })
 ]
 
-const htmlPlugin = new HtmlWebpackPlugin({
-  filename: './pages/index/index.html',
-  template: path.resolve(dirVars.SRC_PATH, './pages/index'),
-  hash: true, // 为静态资源生成hash值
-  xhtml: true,
+
+pageArr.forEach((page) => {
+  const htmlPlugin = new HtmlWebpackPlugin({
+    filename: `./pages/${page}index.html`,
+    template: path.resolve(dirVars.PAGE_PATH, page + '/index'),
+    chunks: ['pages/index'],
+    css: true,
+    hash: true, // 为静态资源生成hash值
+    xhtml: true,
+  })
+  configPlugins.push(htmlPlugin);
 });
-configPlugins.push(htmlPlugin);
+
 
 module.exports = configPlugins

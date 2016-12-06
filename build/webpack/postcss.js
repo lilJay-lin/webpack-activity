@@ -6,7 +6,7 @@ const autoprefixer = require('autoprefixer')
 module.exports = function () {
   return [autoprefixer({
     remove: false,
-    browser: [
+    browsers: [
       'ie >= 8',
       'ie_mob >= 10',
       'ff >= 30',

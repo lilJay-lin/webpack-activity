@@ -16,9 +16,13 @@ module.exports = {
   loaders: [
     /*解析css*/
     {
-      test: /\.(css|less)$/,
+      test: /\.css$/,
+      exclude: /node_modules/,
+      loader: ExtractTextPlugin.extract('css?minimize&-autoprefixer!postcss'),
+    },
+    {
+      test: /\.less$/,
       /*include: []*/
-      /*exclude: []*/
       loader: ExtractTextPlugin.extract('css?minimize&importLoaders=1!postcss!less')
     },
     /*加载图片*/
@@ -32,12 +36,10 @@ module.exports = {
     },
     {
       test: /\.html$/,
-      include: dirVars.SRC_PATH,
       loader: 'html',
     },
     {
       test: /\.ejs$/,
-      include: dirVars.SRC_PATH,
       loader: 'ejs',
     },
     /*字体*/

@@ -3,8 +3,11 @@
  */
 const path = require('path')
 const dirVars = require('./dir_vars')
+const pageArr = require('./page_entries.config');
+const configEntry = {};
 
-module.exports = {
-  main: path.resolve(dirVars.SRC_PATH, 'main.js'),
-  other: path.resolve(dirVars.SRC_PATH, 'other.js')
-}
+pageArr.forEach((page) => {
+  configEntry[page] = path.resolve(dirVars.PAGE_PATH, page + '/page');
+});
+
+module.exports = configEntry;
