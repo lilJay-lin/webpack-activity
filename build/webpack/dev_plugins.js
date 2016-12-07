@@ -1,7 +1,7 @@
 /**
  * Created by linxiaojie on 2016/12/5.
  */
-const plugins = require('./inherit/plugins')
+const plugins = require('./plugins')
 const webpack = require('webpack')
 
 plugins.push(new webpack.DefinePlugin({
