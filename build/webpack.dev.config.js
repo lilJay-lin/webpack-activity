@@ -18,9 +18,9 @@ module.exports = {
     plugins: require('./webpack/dev_plugins'),
 
     /*定义全局变量: require('jquery')会返回window.jQuery*/
-    externals: {
+/*    externals: {
         'jquery': 'window.jQuery'
-    },
+    },*/
     /*文件加载模块配置*/
     module: require('./webpack/modules'),
 

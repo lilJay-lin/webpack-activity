@@ -8,4 +8,11 @@ plugins.push(new webpack.DefinePlugin({
   PRODUCTION: JSON.stringify(false)
 }))
 
+plugins.push(new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery',
+  'window.jQuery': 'jquery',
+  'window.$': 'jquery',
+}))
+
 module.exports = plugins
