@@ -3,7 +3,23 @@
  */
 const layout = require('./index.ejs')
 module.exports = {
-  render (data) {
-    return layout(data)
+  render ({
+    keywords = '',
+    description = '',
+    title = '',
+    header = '',
+    bigBanner = '',
+    content = '',
+    footer = ''
+    }) {
+    return layout({
+      keywords,
+      description,
+      title,
+      header,
+      bigBanner,
+      content,
+      footer
+    })
   }
 }
