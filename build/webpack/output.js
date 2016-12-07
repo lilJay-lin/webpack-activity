@@ -9,7 +9,7 @@ module.exports = {
   /*静态资源编译路径, file-loader之类的静态静态资源会拼接这个路径作为访问地址*/
   publicPath: '../../',
   /*输出的入口文件*/
-  filename: '[name].js',
+  filename: 'pages/[name]/entry.js',
   /*入口文件内部webpack优化生产的文件*/
   chunkFilename: '[id].chunk.js'
 }
