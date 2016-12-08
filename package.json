@@ -4,7 +4,7 @@
   "description": "活动类开发流程工具",
   "main": "main.js",
   "scripts": {
-    "build": "webpack --progress -colors --config ./build/webpack.pro.config.js",
+    "build": "webpack --progress -colors --config ./build/webpack.prod.config.js",
     "dev": "webpack --progress -colors --config ./build/webpack.dev.config.js",
     "watch": "webpack --progress -colors --watch --config ./build/webpack.dev.config.js",
     "start": "webpack-dev-server --inline  --hot --progress --compress --devtool --config ./build/webpack.dev.config.js --content-base dist/",
@@ -22,7 +22,6 @@
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
-    "jquery": "^3.1.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "postcss-loader": "^1.1.0",
@@ -31,6 +30,6 @@
     "webpack": "^1.13.3"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^1.11.3"
   }
 }
