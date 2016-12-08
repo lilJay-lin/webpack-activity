@@ -13,6 +13,7 @@ const imgBox = require('components/imgBox')
 const msgBox = require('components/msgBox')
 const imgInfo2 = require('components/imgInfo2')
 const imgInfo1 = require('components/imgInfo1')
+const footer = require('components/footer')
 
 const _buyOrderGroup = require('../_buyOrderGroup')
 const _leftAd = require('../_leftAd')
@@ -208,5 +209,6 @@ module.exports = layout.render({
   description: '肇庆搜房网',
   header: topNav.render(),
   bigBanner: bigBanner.render(),
-  content: tab.render() + newHouse + secondHouse + content3 + content4 + content5
+  content: tab.render() + newHouse + secondHouse + content3 + content4 + content5,
+  footer: footer.render()
 })
