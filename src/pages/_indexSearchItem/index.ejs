@@ -1,0 +1,13 @@
+<ul class="list1">
+	<% list.forEach(function(items, outIdx){%>
+		<li>
+			<% items.forEach(function(name, idx){%>
+
+				<a  href="" target="_blank"><%=name%></a>
+				<% if (items.length - 1 !== idx) { %>
+				<em>|</em>
+				<%}%>
+			<%})%>
+		</li>
+	<%})%>
+</ul>
