@@ -5,6 +5,7 @@ require('./index.less')
 
 var $ = require('jquery')
 $(function(){
+
   var $searchKeys = $('.bigbanner-mask .news02 a'),
     $searchInputDir = $('.bigbanner-mask .news03 .searchjt');
   $searchKeys.on('mouseover', function () {
@@ -12,6 +13,6 @@ $(function(){
     $searchKeys.removeClass('cur')
     $cur.addClass('cur')
     $searchInputDir.hide()
-    $searchInputDir.eq($searchKeys.index($cur)).show()
-  })
-})
+    $searchInputDir.eq($searchKeys.index($cur)).show();
+  });
+});

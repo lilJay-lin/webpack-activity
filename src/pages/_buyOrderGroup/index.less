@@ -9,12 +9,19 @@
 
 .order-group{
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  &.head-line {
+  border-top: 1px solid #63b8ff;
+  padding-top: 10px;
+}
   h3{
     font-weight: normal;
     margin-bottom: 20px;
+
+    font-size: 20px;
   }
   input{
+    width: 180px;
     line-height: 25px;
     margin-bottom: 20px;
     outline: 0;
@@ -27,5 +34,8 @@
     border: 1px solid @main-color;
     padding: 5px 20px;
     cursor: pointer;
+    &.on {
+      color: #63b8ff;
+    }
   }
 }

@@ -9,9 +9,13 @@ require('components/imgBox/page')
 require('components/msgBox/page')
 require('components/imgInfo2/page')
 require('components/footer/page')
+require('components/wordList/page')
 require('layout/twoCol/page')
 require('layout/twoCol2/page')
 require('layout/picList1/page')
 require('../_indexSearchItem/page')
 require('../_buyOrderGroup/page')
 require('../_leftAd/page')
+
+
+require('./override.less')

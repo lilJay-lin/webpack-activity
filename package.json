@@ -7,7 +7,7 @@
     "build": "webpack --progress -colors --config ./build/webpack.prod.config.js",
     "dev": "webpack --progress -colors --config ./build/webpack.dev.config.js",
     "watch": "webpack --progress -colors --watch --config ./build/webpack.dev.config.js",
-    "start": "webpack-dev-server --inline  --hot --progress --compress --devtool --config ./build/webpack.dev.config.js --content-base dist/",
+    "start": "webpack-dev-server --inline  --hot --progress --compress --devtool --port 3000 --config ./build/webpack.dev.config.js --content-base dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
