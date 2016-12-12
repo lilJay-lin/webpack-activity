@@ -1,0 +1,92 @@
+@import '../../less/variables.less';
+.searchbg {
+    font-family: "Microsoft YaHei";
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+}
+.searchbox {
+    margin: 0 auto;
+    background: #f3f3f3;
+    width: @min-width;
+    padding: 8px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.zqsearch {
+    width: @min-width -40;
+    margin: 0 20px;
+    height: 52px;
+}
+.zsearch_con {
+    float: left;
+    height: 38px;
+    margin-top: 7px;
+    border-radius: 2px;
+    font-family: "Microsoft YaHei",Arial;
+    position: relative;
+    width: 550px;
+    z-index: 9998;
+    .button {
+        background: @main-color;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        float: left;
+        font-family: "Microsoft YaHei",Arial;
+        font-size: 16px;
+        font-weight: bold;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        transition: all 0.2s linear 0s;
+        width: 89px;
+    }
+}
+.fylist {
+    border-left: 1px solid #ddd;
+    width: 114px;
+    border-top: 1px solid #ddd;
+    float: right;
+    margin-top: 0;
+    overflow: hidden;
+    span {
+        border-bottom: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        float: left;
+        text-align: center;
+        &.mapmode a {
+            background: url('./map.png') 50% 0  no-repeat;
+            background-size: 30px auto;
+        }
+        a {
+            background: url('./list.png') 50% 0  no-repeat;
+            background-size: 25px auto;
+            color: #999999;
+            display: block;
+            height: 20px;
+            padding-top: 30px;
+            text-decoration: none;
+            width: 56px;
+        }
+        &.listmode a {
+            background-position: 17px 7px;
+            background-color: #fff;
+        }
+    }
+}
+
+.inputstyle_out, .inputstyle_on, .inputstyle_move, .inputstyle_off {
+    float: left;
+    border: 1px solid #d2d2d2;
+    border-right: 0;
+    box-sizing: content-box;
+    color: #666;
+    font-family: "Microsoft YaHei" ,Arial;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    outline: medium none;
+    padding: 9px 10px;
+    width: 437px;
+}
