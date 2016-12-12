@@ -1,22 +1,24 @@
 <div class="main-content">
 	<div class="listBox fl">
+		<div class="search-result">
+			<div class="result-num fl">
+				共搜索到31个楼盘
+			</div>
+			<div id="selectpx" class="fr ml10">
+				<div id="list_D10_09" class="tag_select" onmousemove="dvmouseover(this,'options_orderbys')" onmouseout="dvmouseout(this,'options_orderbys')" style="cursor: pointer;">默认排序</div>
+				<ul id="options_orderbys" class="tag_options" onmouseout="hiddenPt(this)" onmouseover="showPt(this)" style="position: absolute; z-index: 999; display: none;">
+					<li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/house/k250-h316/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按发布时间排序</li>
+					<li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/house/k250-h310/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按单价从低到高</li>
+					<li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/house/k250-h39/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按单价从高到低</li>
+					<li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/house/k250-h31/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按更新时间排序</li>
+					<li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/house/k250/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">默认排序</li>
+				</ul>
+			</div>
+		</div>
 		<div class="houseList">
-			<dl id="list_D03_01" onmouseout="mouseOutStyle(this)" onmouseover="mouseOverStyle(this)" class="list rel">
-				<dt class="img rel fl">
-					<a href="/chushou/3_159546847.htm" target="_blank"> <img width="180" height="135" src="http://cdnsfb.soufunimg.com/viewimage/1/2016_9/6/M19/25/cd8f49dad57f46ada6a63d06be242e8f/220x165c.jpg" onerror="imgiserror(this,'http://cdnsfb.soufunimg.com/1/2016_9/6/M19/25/cd8f49dad57f46ada6a63d06be242e8f.jpg')" /></a>
-				</dt>
-				<dd class="info rel fr">
-					<p class="title"><a href="/chushou/3_159546847.htm" target="_blank" title="朗诗麦君 地铁3号线口 采光好 精品户型供选择 给您一个温馨的家">朗诗麦君 地铁3号线口 采光好 精品户型供选择 给您一个温馨的家</a> </p>
-					<p class="mt12"> 2室1厅 <span class="line">|</span>低层(共24层) <span class="line">|</span>南北向 <span class="line">|</span>建筑年代：2015 </p>
-					<p class="mt10"> <a target="_blank" href="/house-xm2611081528/" title="朗诗麦君"><span>朗诗麦君</span></a> <span class="iconAdress ml10 gray9" title="王家湾-龙阳大道68号(龙阳大道与龙阳湖南路交汇处)">王家湾-龙阳大道68号(龙阳大道与龙阳湖南路交汇处)</span> </p>
-					<p class="gray6 mt10"><a rel="nofollow" href="/a/aa18827045818" title="访问[谭锦龙]的个人网上店铺，查看更多房源" target="_blank">谭锦龙</a><span class="ml10 gray9">15秒前更新</span></p>
-					<div class="moreInfo">
-						<p class="mt5 alignR"><span class="price">50</span><span class="YaHei ml5">万</span></p>
-						<p class="danjia alignR mt5">11111元<span class="Arial">/</span>㎡</p>
-					</div>
-				</dd>
-				<div class="clear"></div>
-			</dl>
+			<%for(var i = 0; i < 5; i++){%>
+				<%=item%>
+			<%}%>
 		</div>
 		<%=pagination%>
 	</div>

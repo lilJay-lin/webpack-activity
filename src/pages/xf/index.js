@@ -9,6 +9,7 @@ const footer = require('components/footer')
 const topSearch = require('components/topSearch')
 const searchParam = require('components/searchParam')
 const pagination = require('components/pagination')
+const searchResultItem = require('components/searchResultItem')
 
 module.exports = layout.render({
   title: '肇庆搜房网',
@@ -16,6 +17,7 @@ module.exports = layout.render({
   description: '肇庆搜房网',
   header: topNav.render(),
   content: topSearch.render() + searchParam.render() + content({
+    item: searchResultItem.render(),
     pagination: pagination.render()
   }) ,
   footer: footer.render()

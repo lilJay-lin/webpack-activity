@@ -63,82 +63,73 @@
     }
 }
 
-/*房子*/
-.houseList .list {
-    padding: 20px 0;
-    border-bottom: 1px dotted #ddd;
-    background: #fff;
-    display: block;
+#selectpx {
+    .select_box {
+        width: 83px;
+        height: 25px;
+    }
+    div.tag_select, #selectbox div.tag_select_hover, #selectbox div.tag_select_open {
+        display: block;
+        width: 60px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        background: url(./searchbj.gif) no-repeat 0 -102px;
+        padding: 0 20px 0 5px;
+    }
+    ul.tag_options {
+        margin-top: -1px;
+        mlist-style: none;
+        border: 1px solid #bdbdbd;
+        border-top: none;
+        width: 81px;
+        background: #fff;
+        li {
+            display: block;
+            padding: 0 8px;
+            height: 22px;
+            text-decoration: none;
+            line-height: 22px;
+            &.open_hover {
+                background: #eee;
+            }
+        }
+    }
+
+    div.tag_select_hover,div.tag_select_open {
+        display: block;
+        width: 60px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        background: url(./searchbj.gif) no-repeat 0 -102px;
+        padding: 0 20px 0 5px;
+    }
+}
+.mt15 {
+    margin-top: 15px;
+}
+.clearfix{
     clear: both;
-    font-size: 13px;
-    .img {
-        img {
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.search-result{
 
-            width: 180px;
-            height: 135px;
-            overflow: hidden;
-        }
-    }
-    .info {
-        width: 735px;
-
-        p.gray9 a , p.gray6 a{
-            margin-right: 10px;
-        }
-    }
-    p.title {
-        line-height: 24px;
-    }
-    .title {
-        height: 24px;
-        font-size: 18px;
-        font-family: 'Microsoft YaHei';
-        overflow: hidden;
-    }
-    .mt12 {
-        margin-top: 12px;
-    }
-    p {
-        line-height: 14px;
-    }
-    .line {
-        color: #999;
-        margin: 0 8px;
-        font-family: Arial;
-    }
-
-    .moreInfo {
-        width: 115px;
-        right: 15px;
-        top: 35px;
-        position: absolute;
-    }
-
-}
-.mt5 {
-    margin-top: 5px;
-}
-.alignR {
-    text-align: right;
-}
-.danjia {
-    font-size: 12px;
-}
-.rel {
-    position: relative;
-}
-.iconAdress {
-    background-position: 0 -88px;
-}
-.gray9, .gray9 a {
-    color: #999;
-}
-.gray6, .gray6 a {
-    color: #666;
-}
-.price {
-    color: #de3438;
-    font: 29px/30px Arial;
-    padding-right: 4px;
-    vertical-align: -1px;
+    height: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
